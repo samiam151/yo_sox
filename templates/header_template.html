@@ -1,0 +1,89 @@
+<header>
+    <!--Top Row Nav [wishlist, checkout, myaccount...]-->
+    <nav class="topNav">
+        <div class="topNav_container">
+            <!--Logo-->
+            <div class="header_logo_div">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="">
+                </a>  
+            </div>
+            <!--Nav-->
+            <ul>
+                <div class="choices">
+                    <!--wish list-->
+                    <img src="assets/header_icons_heart.jpg" alt="heart">
+                    <li class="topNavItem">WISH LIST</li>
+
+                    <!--checkout-->
+                    <img src="assets/header_icons_cart.jpg" alt="cart">
+                    <li class="topNavItem">CHECKOUT</li>
+
+                    <!--my account-->
+                    <img src="assets/header_icons_star.jpg" alt="star">
+                    <li class="topNavItem">MY ACCOUNT</li>
+                    <li>|</li>
+  
+                    <!--logout-->
+                    <li class="topNavItem" id='logout'>LOGOUT</li>
+                    <li class="topNavItem">ENG</li>
+                    <img src="assets/lang_arrow_03.jpg" alt="">
+                </div>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <!--Main Nav [men, women, socks...]-->
+    <nav class="mainNav">
+        <div class="mainNav_container">
+            <ul class="nav_list">
+                <li class='mainNavItem'><a id="men_link" href="men.html">MEN</a></li>
+                <li class='mainNavItem'>WOMEN</li>
+                <li class='mainNavItem'>ALL SOCKS</li>
+                <li class='mainNavItem'>SOCIAL SCENE</li>
+                <li class='mainNavItem'><a id="story_link" href="about.html">OUR STORY</a></li>
+            </ul>
+
+            <ul class="cart_search">
+                <li>
+                    <input type="text" class="search">
+                </li>
+                <li>
+                    <img class="cart" src="assets/header_icons_cart_5.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!--<ng-include src="'templates/mobile_nav.html'"></ng-include>-->
+<div class="mobile_nav">
+    <div class="hidden_menu_container">
+        <div class="row">
+
+            <!--Menu Icon-->
+            <div class="col-xs-3">
+                <span class="glyphicon glyphicon-menu-hamburger mobile_menu_icon" aria-hidden="true"></span>
+            </div>
+            
+            <!--Logo -->
+            <div class="col-xs-6 mobile_logo">
+                <img class="mobile_logo_img" src="assets/logo.png" alt="logo">
+            </div>
+            <div class="col-xs-3"></div>
+        </div>
+    </div>
+</div>
+
+<div class="hidden_menu">
+    <nav class="hidden_menu_ul">
+        <ul>
+            <li class=''><a id="men_link" href="men.html">MEN</a></li>
+            <li class=''>WOMEN</li>
+            <li class=''>ALL SOCKS</li>
+            <li class=''>SOCIAL SCENE</li>
+            <li class=''><a id="story_link" href="about.html">OUR STORY</a></li>
+        </ul>
+    </nav>
+</div>

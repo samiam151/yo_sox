@@ -1,0 +1,242 @@
+$dark_grey: #262626;
+$off-white: rgb(242,242,242);
+$logo_red: #df0039;
+$logo_blue: #019ee3;
+
+// Tablets
+@media only screen and (max-width: 960px){
+    // Header
+
+    header {
+        display: none;
+    }
+
+    .header_logo_div {
+        top: -5;
+        
+        img {
+            width: 65px;
+            padding: 10px;
+        }
+    }
+    .nav_list {
+        width: 65%;
+    }
+    .cart_search {
+        width: 25%;
+    }
+
+    // Footer
+    .footer_list {
+        float: left;
+        width: 33%;
+        font-size: 0.9em;
+
+        .social_icons {
+            width: 20%;
+        }
+    }
+    .footer_grid_picture {
+        display: none;
+    }
+
+    .footer_logo_div {
+        width: 10%;
+        margin-top: -10%;
+    } 
+
+    .payments {
+        text-align: center;
+    }
+
+    // Men's Page
+    .mens_item ul {
+        padding-top: 15px;
+    }
+
+        // Mobile Navigation
+    .mobile_nav {
+        display: block;
+        background-color: $dark_grey;
+        height: 65px;
+        color: $off-white;
+
+        .hidden_menu_container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 15px 0;
+        }
+
+        .mobile_logo {
+            .mobile_logo_img {
+                width: 35px;
+                display: inline-block;
+                margin-left: 45%;
+            }
+        }
+
+        .glyphicon-menu-hamburger {
+            font-size: 25px;
+            color: $logo_blue;
+            padding-top: 4px;
+
+            &:hover {
+                color: darken($logo_blue, 15%);
+            }
+        }
+    }
+
+    .hidden_menu {
+        height: 100vh;
+        width: 100%;
+        background-color: $logo_red;
+        opacity: 0.95;
+        position: absolute;
+        right: 100vw;
+        z-index: 1000;
+        // transition: all 0.25s ease-out;
+
+        ul {
+            padding-top: 125px;
+        }
+
+        li {
+            display: block;
+            text-align: center;
+            font-size: 3em;
+            color: $off-white;
+            line-height: 1.5em;
+        }
+    }
+
+    .show {
+        right: 0;
+    }
+}
+
+
+// Phones
+@media only screen and (max-width: 640px){
+
+    // Header
+    header {
+        display: none;
+    }
+
+    .header_logo_div {
+        top: 0;
+        
+        img {
+            width: 35px;
+            padding: 5px;
+        }
+    }
+
+    // Our Story Page
+    .about_container, .footer_list_container {
+        width: 85%;
+        text-align: center; 
+    }
+
+    // Footer
+    .footer_logo_div, .footer_grid_picture {
+        display: none;
+    }
+    .footer_container {
+        padding: 7%;
+    }
+
+    .footer_list {
+        width: 33%;
+        float: left;
+        font-size: 0.8em;
+
+        .social_icons {
+            width: 20%;
+        }
+    }
+    .footer_cards {
+        .payments {
+            width: 90%;
+        }
+    }
+    
+    // Men's Page
+    .carousel_item {
+        text-align: center;
+    }
+    .mens_item {
+        margin-bottom: 30px;
+
+        .item_picture {
+            width: 100%;
+            height: 100px;
+        }
+
+        ul {
+            padding-top: 15px;
+        }
+    }
+
+        // Mobile Navigation
+    .mobile_nav {
+        display: block;
+        background-color: $dark_grey;
+        height: 65px;
+        color: $off-white;
+
+        .hidden_menu_container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 15px 0;
+        }
+
+        .mobile_logo {
+            .mobile_logo_img {
+                width: 35px;
+                display: inline-block;
+                margin-left: 45%;
+            }
+        }
+
+        .glyphicon-menu-hamburger {
+            font-size: 25px;
+            color: $logo_blue;
+            padding-top: 4px;
+
+            &:hover {
+                color: darken($logo_blue, 15%);
+            }
+        }
+    }
+
+    .hidden_menu {
+        height: 100vh;
+        width: 100%;
+        background-color: $logo_red;
+        opacity: 0.95;
+        position: absolute;
+        right: 100vw;
+        z-index: 1000;
+        // transition: all 0.25s ease-out;
+
+        ul {
+            padding-top: 125px;
+        }
+
+        li {
+            display: block;
+            text-align: center;
+            font-size: 3em;
+            color: $off-white;
+            line-height: 1.5em;
+        }
+    }
+
+    .show {
+        right: 0;
+    }
+
+
+}
+

@@ -1,0 +1,19 @@
+.about_container{
+    width: 50%;
+    margin: 3% auto 7%;
+
+    .about_banner {
+        width: 100%;
+    }
+}
+
+.about_content {
+    margin-top: 5%;
+    color: $text-grey;
+}
+
+.sub_banner {
+    font-weight: 700;
+    margin-top: 3%;
+    color: $text-grey;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html lang="en" ng-app='app'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Yo Sox!</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+<body ng-controller='MainController'>
+
+    <!--Header-->
+    <div ng-include src="'templates/header_template.html'" onload='loadScripts()'></div>
+
+    <!--Men Template-->
+    <div ng-include src="'templates/men_template.html'"'></div>
+
+    <!--Footer-->
+    <div ng-include src="'templates/footer_template.html'"'></div>
+
+    <!--Libs and Scripts-->
+    <script type="text/javascript" src='node_modules/angular/angular.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src='node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='scripts/app.js'></script>
+</body>
+</html>

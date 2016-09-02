@@ -1,0 +1,59 @@
+<!--Carousel Banner-->
+<carousel></carousel>
+
+<!--New Arrivals-->
+<div class="arrivals_container">
+    <h2>NEW ARRIVALS</h2>
+    <p class="free_shipping">*FREE SHIPPING ON ORDERS OF 2 OR MORE</p>
+
+    <!--Row 1-->
+    <div class="row">
+        <mens-item picture="assets/socks_03.jpg"></mens-item>
+        <mens-item picture="assets/socks_05.jpg"></mens-item>
+        <mens-item picture="assets/socks_07.jpg"></mens-item>
+    </div>
+
+    <!--Row 2-->
+    <div class="row">
+        <mens-item picture="assets/socks_12.jpg"></mens-item>
+        <mens-item picture="assets/socks_14.jpg"></mens-item>
+        <mens-item picture="assets/socks_15.jpg"></mens-item>
+    </div>
+
+    <!--Row 3-->
+    <div class="row">
+        <mens-item picture="assets/socks_20.jpg"></mens-item>
+        <mens-item picture="assets/socks_21.jpg"></mens-item>
+        <mens-item picture="assets/socks_22.jpg"></mens-item>
+    </div>
+</div>
+
+<!--Yo Chatter-->
+<div class="yo_chatter">
+    <div class="yo_chatter_container">
+
+        <!--Header-->
+        <p class="chatter_header">YO SOX CHATTER</p>
+
+        <!--Carousel-->
+        <carouselchatter></carouselchatter>
+
+
+        <!--Join the Discusion-->
+        <p>JOIN THE DISCUSSION</p>
+        <ul class="social">
+            <li class="icons"><img src="assets/social_icons_white_03.jpg" alt=""></li>
+            <li class="icons"><img src="assets/social_icons_white_04.jpg" alt=""></li>
+            <li class="icons"><img src="assets/social_icons_white_05.jpg" alt=""></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    // Start carousels on Mens's Page
+    $(document).ready(function(){
+        $('.carousel').carousel({
+            wrap: true,
+            interval: 6000
+        });
+</script>

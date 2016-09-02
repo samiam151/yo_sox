@@ -1,0 +1,98 @@
+$blue: #5abfeb;
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+
+.carousel-indicators {
+
+    top: 105%;
+
+    li {
+        background-color: #b2b3b5;
+        border: none;
+        width: 15px;
+        height: 15px;
+        margin: 0;
+    }
+   
+    .active {
+        background-color: #039ce0;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+// New Arrivals
+.arrivals_container{
+    text-align: center;
+    width: 80%;
+    margin: 75px auto 0;
+
+    .free_shipping {
+        color: $blue;
+        font-size: 0.7em;
+    }
+}
+
+// Men's Socks Item
+.mens_item {
+    ul {
+        padding-top: 75px;
+    }
+}
+
+// Yo Chatter
+.yo_chatter {
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 3%;
+ 
+    .chatter_header {
+        font-weight: 100;
+        letter-spacing: 0.4em;
+        font-size: 1.5em;
+    }
+
+    .social {
+        padding-top: 15px;
+    }
+
+    .icons {
+        display: inline;
+
+        img {
+            width: 25px;
+        }
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    .carousel_item {
+        width: 70%;
+        margin: 0 auto;
+
+        .chatter_carousel_img {
+            width: 25%;
+            display: inline-block;
+        }
+        .quote {
+            display: inline-block;
+            width: 74%;
+            text-align: right;
+            vertical-align: middle;
+            padding-right: 25%;
+
+            .quote_content {
+                font-size: 1.4em;
+                letter-spacing: 0.3em;
+            }
+            .quote_author {
+                font-size: 0.7em;
+                padding-right: 25px;
+            }
+        }
+    }
+}

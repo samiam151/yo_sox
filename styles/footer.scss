@@ -1,0 +1,62 @@
+footer {
+    background-color: $grey;
+    color: white;
+}
+
+.footer_container {
+    padding: 4% 0;
+}
+
+.footer_list {
+    
+    .footer_list_header {
+        font-weight: 700;
+    }
+
+    li {
+        margin-bottom: 5%;
+    }
+
+    .social {
+        padding-top: 15%;
+
+        .social_icons {
+            padding-top: 15%;
+        }
+    }
+
+    .footer_grid_picture {
+        width: 100%;
+    }
+}
+
+.footer_cards {
+    background-color: $dark_grey;
+    padding: 15px 0;
+
+    .payments {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .payment_pic {
+        display: inline;
+    }
+}
+
+.footer_logo_div {
+    // padding: 2% 1%;
+    border-radius: 50%;
+    background-color: $dark_grey;
+    float: left;
+    margin-top: -150px;
+    margin-left: 80px;
+    width: 150px;
+
+    img {
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+    }
+}

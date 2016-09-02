@@ -1,0 +1,99 @@
+nav {
+    &.topNav {
+        background-color: $off-white;
+        text-align: right;
+
+        .topNav_container {
+            padding-right: 5%;
+        }
+
+        .topNavItem {
+            font-size: 0.7em;
+            // font-weight: 700;
+            color: $text-grey;
+        }
+    }
+
+    &.mainNav {
+        border-bottom: 1px solid $light_grey;
+        font-size: 0.7em;
+            // font-weight: 700;
+            color: $text-grey;
+
+        .mainNav_container {
+            padding-left: 150px;
+        }
+
+        .mainNavItem {
+            margin-right: 2%;
+            
+        }
+    }
+
+    li {
+        display: inline-block;
+        margin: 0 8px; 
+    }
+
+    .choices {
+        // width: 50%;
+        display: inline-block;
+        margin-left: 1%;
+
+        #logout {
+            font-weight: 700;
+        }
+    }
+
+}
+
+.header_logo_div {
+    border-radius: 50%;
+    box-shadow: 3px 0px 3px rgba(0,0,0,0.5);
+    // width: 75px;
+    float: left;
+    background-color: $white;
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    z-index: 500;
+
+    img {
+        width: 100px;
+        padding: 15px;
+    }
+}
+
+.logout {
+    font-weight: 700;
+}
+
+.nav_list {
+    display: inline-block;
+    width: 45%
+}
+
+.cart_search {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+
+    img {
+        width: 80%;
+        margin-top: -10px;
+    }
+}
+
+.search {
+    background: url("../assets/header_icons_magnifying_glass.jpg") no-repeat right center;
+    border-radius: 3px;
+    border: none;
+    background-color: $search-box-grey;
+    padding: 5px 15px;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.2);
+
+    &:focus, &:active {
+        outline: none;
+        background-color: darken($search-box-grey, 10%);
+    }
+}

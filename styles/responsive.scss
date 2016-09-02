@@ -4,7 +4,7 @@ $logo_red: #df0039;
 $logo_blue: #019ee3;
 
 // Tablets
-@media only screen and (max-width: 960px){
+@media only screen and (max-width: 1000px){
     // Header
 
     header {
@@ -94,10 +94,10 @@ $logo_blue: #019ee3;
         position: absolute;
         right: 100vw;
         z-index: 1000;
-        // transition: all 0.25s ease-out;
 
         ul {
-            padding-top: 125px;
+            // padding-top: 125px;
+            padding-top: 15%;
         }
 
         li {
@@ -218,10 +218,10 @@ $logo_blue: #019ee3;
         position: absolute;
         right: 100vw;
         z-index: 1000;
-        // transition: all 0.25s ease-out;
 
         ul {
-            padding-top: 125px;
+            // padding-top: 125px;
+            padding-top: 7%;
         }
 
         li {

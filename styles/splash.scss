@@ -1,4 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway:100,400,700';
+$red: #e0013a;
+
 
 body {
     background-image: url('../assets/home_removeMenu.jpg');
@@ -10,6 +12,14 @@ body {
     text-align: center;
 }
 
+a {
+    color: inherit;
+
+    &:hover {
+        color: $red;
+    }
+}
+
 .splashMenu {
     padding: 15px;
     margin-top: 6%;
@@ -19,9 +29,37 @@ body {
     height: 250px;
 }
 
+.splashMenuContent {
+    margin-top: 25px;
+
+    .customize {
+        font-size: 0.5em;
+        color: #a6a6a8;
+        margin-bottom: 3px;
+        margin-top: -10px;
+    }
+}
+
 .splashMenuItem {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 15px;
+    font-size: 1.1em;
+    font-weight: 100;
+
+    &.first {
+        box-sizing: content-box;
+    }
+
+    
+}
+
+.separator {
+    border-right: 1px solid #a6a6a8;
     display: inline;
-    padding: 5px;
+    font-size: 2em;
+    top: 5px;
+    position: relative;
 }
 
 // Tablets
@@ -31,10 +69,10 @@ body {
     }
 
     .splashMenu {
-        margin: 15% auto;
+        margin: 150px auto;
         width: 450px;
         height: 450px;
-        padding: 10%;
+        padding: 100px;
     }
     
 }
@@ -45,7 +83,8 @@ body {
         background-position: 20% 100%;
     }
     .splashMenu {
-        margin: 5%;
-        width: 80%;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
     }
 }

@@ -54,7 +54,21 @@ $logo_blue: #019ee3;
         padding-top: 15px;
     }
 
-        // Mobile Navigation
+    // Values
+    .values {
+        text-align: center;
+
+        .value p {
+            padding-right: 0;
+        }
+    }
+
+    // Support
+    .support {
+        display: none;
+    }
+
+    // Mobile Navigation
     .mobile_nav {
         display: block;
         background-color: $dark_grey;
@@ -178,7 +192,8 @@ $logo_blue: #019ee3;
         }
     }
 
-        // Mobile Navigation
+
+    // Mobile Navigation
     .mobile_nav {
         display: block;
         background-color: $dark_grey;

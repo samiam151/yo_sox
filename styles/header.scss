@@ -30,12 +30,14 @@ nav {
             margin-right: 3%;
 
             &:hover {
-                :after {
-                    // content: url('../assets/arrow.jpg');
+                &:after {
+                    content: url('../assets/triangle.png');
                     position: relative;
-                    top: 20px;
-                    right: 20px;
+                    top: 15px;
+                    right: 50%;
+            
                 }
+                
 
                 & > ul {
                     display: block;
@@ -46,7 +48,7 @@ nav {
         .men_dropdown {
             display: none;
             position: absolute;
-            padding-top: 15px;
+            margin-top: 12px;
             background-color: rgba(255,255,255,0.8);
             z-index: 495;
             width: 100vw;
@@ -58,7 +60,7 @@ nav {
                 cursor: pointer;
 
                 &:hover {
-                    color: $light_grey;
+                    color: $logo_blue;
                 }
             }
         }

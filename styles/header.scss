@@ -12,42 +12,56 @@ nav {
             // font-weight: 700;
             color: $text-grey;
         }
+
+        li {
+            display: inline;
+        }
     }
 
     &.mainNav {
-        border-bottom: 1px solid $light_grey;
-        font-size: 0.7em;
-            // font-weight: 700;
-            color: $text-grey;
+        padding-left: 15%;
 
-        .mainNav_container {
-            padding-left: 150px;
+        li {
+            float: left;
+
         }
 
         .mainNavItem {
-            margin-right: 2%;
-            // display: inline;
-            // width: 75px;
-            float:left;
-            vertical-align: top;
+            margin-right: 3%;
 
-            &:hover > ul {
-                display: block;
-                position: absolute;
-                top: 70px;
-                z-index: 499;
-                background-color: rgba(255,255,255,0.8);
-                width: 100%;
-                padding: 1%;
+            &:hover {
+                :after {
+                    // content: url('../assets/arrow.jpg');
+                    position: relative;
+                    top: 20px;
+                    right: 20px;
+                }
+
+                & > ul {
+                    display: block;
+                }
             }
         }
 
+        .men_dropdown {
+            display: none;
+            position: absolute;
+            padding-top: 15px;
+            background-color: rgba(255,255,255,0.8);
+            z-index: 495;
+            width: 100vw;
+            border-radius: 5px;
 
-    }
+            li {
+                padding: 5px 2%;
+                border-right: 1px solid $grey; 
+                cursor: pointer;
 
-    li {
-        display: inline-block;
-        margin: 0 8px; 
+                &:hover {
+                    color: $light_grey;
+                }
+            }
+        }
     }
 
     .choices {
@@ -83,18 +97,9 @@ nav {
     font-weight: 700;
 }
 
-.nav_list {
-    display: inline-block;
-    width: 45%;
-
-    .men_dropdown {
-        display: none;
-    }
-}
-
 .cart_search {
     display: inline-block;
-    width: 50%;
+    width: 30%;
     text-align: right;
 
     img {
@@ -108,7 +113,7 @@ nav {
     border-radius: 3px;
     border: none;
     background-color: $search-box-grey;
-    padding: 5px 15px;
+    padding: 0 15px;
     box-shadow: inset 0px 0px 5px rgba(0,0,0,0.2);
 
     &:focus, &:active {

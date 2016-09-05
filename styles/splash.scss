@@ -62,6 +62,35 @@ a {
     position: relative;
 }
 
+.loadingScreen {
+    height: 100vh;
+    width: 100vw;
+    background-color: yellow;
+    z-index: 5000;
+    position: absolute;
+    top: 0;
+
+    .loading_screen_logo {
+        padding-top: 20%;
+        text-align: center;
+    }
+}
+
+.flash{
+	-webkit-animation: flash linear 1s infinite;
+	animation: flash linear 1s infinite;
+}
+@-webkit-keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+
 // Tablets
 @media only screen and (max-width: 960px){
     body {

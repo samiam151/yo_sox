@@ -45,8 +45,55 @@ $values_grey: #d9dadc;
 
 // Men's Socks Item
 .mens_item {
+    height: 200px;
+    margin-bottom: 3%;
+
+    .hoverDiv {
+        display: none;
+        position: absolute;
+        background-color: $logo_red;
+        opacity: 0.9;
+        z-index: 500;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        
+        p {  
+            color: white;
+            cursor: pointer;
+            margin: 5px 50px;
+            border: 1px solid darken($logo_red, 10%);
+            // width: 35%;
+
+            &:hover {
+                color: $logo_blue;
+            }
+
+            &:nth-child(1) {
+                margin-top: 75px;
+            }
+        }
+    }
+
+    &:hover {
+
+        img {
+            width: 53%;
+            transition: all 0.15s ease-in;
+        }
+
+        .hoverDiv {
+            display: block;     
+        }
+    }
+
     ul {
         padding-top: 75px;
+    }
+
+    img {
+        width: 50%;
+        vertical-align: middle;
     }
 }
 

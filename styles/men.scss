@@ -14,7 +14,7 @@ $values_grey: #d9dadc;
 
 .carousel-indicators {
 
-    top: 105%;
+    top: 65%;
 
     li {
         background-color: #b2b3b5;
@@ -29,6 +29,11 @@ $values_grey: #d9dadc;
         width: 15px;
         height: 15px;
     }
+}
+
+.carousel {
+    position: initial;
+    margin-top: 5px;
 }
 
 // New Arrivals

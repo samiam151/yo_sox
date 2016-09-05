@@ -122,6 +122,8 @@ $values_grey: #d9dadc;
 
     .social {
         padding-top: 15px;
+
+        
     }
 
     .icons {
@@ -129,6 +131,11 @@ $values_grey: #d9dadc;
 
         img {
             width: 25px;
+        }
+
+        &:hover img {
+            margin-top: -5px;
+            cursor: pointer;
         }
     }
 
@@ -181,9 +188,10 @@ $values_grey: #d9dadc;
     }
 
     &:hover {
-        left: -20;
+        left: -30;
         transition: all 0.25s ease-in-out;
         background-color: $logo_red;
+        cursor: pointer;
     }
 }
 

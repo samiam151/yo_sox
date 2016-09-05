@@ -14,7 +14,7 @@ $values_grey: #d9dadc;
 
 .carousel-indicators {
 
-    top: 65%;
+    top: 105%;
 
     li {
         background-color: #b2b3b5;
@@ -32,8 +32,8 @@ $values_grey: #d9dadc;
 }
 
 .carousel {
-    position: initial;
-    margin-top: 5px;
+    position: relative;
+    margin-top: 25px;
 }
 
 // New Arrivals
@@ -56,22 +56,28 @@ $values_grey: #d9dadc;
     .hoverDiv {
         display: none;
         position: absolute;
-        background-color: $logo_red;
+        background-color: white;
         opacity: 0.9;
         z-index: 500;
         width: 100%;
         height: 100%;
         text-align: center;
+        transition: all 0.25s ease-in;
+
+        &:hover {
+            background-color: $logo_red;
+        }
         
         p {  
             color: white;
             cursor: pointer;
             margin: 5px 50px;
-            border: 1px solid darken($logo_red, 10%);
+            font-size: 1.5em;
+            // border: 1px solid darken($logo_red, 10%);
             // width: 35%;
 
             &:hover {
-                color: $logo_blue;
+                color: lighten($logo_red, 43%);
             }
 
             &:nth-child(1) {
@@ -163,15 +169,21 @@ $values_grey: #d9dadc;
     // width: 75px;
     @include rotate;
     display: inline-block;
-    
+    height: 80px;
     color: white;
     position: absolute;
     top: 525;
-    left: -35;
+    left: -55;
 
     p {
-        padding: 10px 20px;
+        padding: 10px 20px 30px;
         font-style: italic;
+    }
+
+    &:hover {
+        left: -20;
+        transition: all 0.25s ease-in-out;
+        background-color: $logo_red;
     }
 }
 

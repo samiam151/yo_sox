@@ -73,7 +73,7 @@
 
             <!--Shipping and Payment-->
             <div class="col-md-4 value">
-                <h4>SHIPPPING and PAYMENT</h4>
+                <h4>SHIPPPING AND PAYMENT</h4>
                 <p>RI, SCES NOS ATRISSIDICAE PERVIT, UTEM FICAPECIAE NIHILLA REM FATIQUIS ETOREDEM TILIIS CUPPILIN RESTEMUS CONSUL TUM NON VIS OMNICIAET VIDE TUAM ORTEMQUIUS; NONSUM EGO</p>
             </div>
         </div>
@@ -83,8 +83,10 @@
 <script>
     // Start carousels on Mens's Page
     $(document).ready(function(){
-        $('.carousel').carousel({
-            wrap: true,
-            interval: 6000
+        $('.carousel').each(function(item){
+            item.carousel({
+                wrap: true,
+                interval: 6000
+            });
         });
 </script>
